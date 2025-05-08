@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金蝶云·苍穹开发者社区运营月报（2025年4月）</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/framer-motion@10/dist/framer-motion.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            background-color: #000000;
+            color: #FFFFFF;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .highlight-red {
+            color: #E31937;
+        }
+
+        .highlight-bg-red {
+            background-color: #E31937;
+        }
+        
+        .highlight-border-red {
+            border-color: #E31937;
+        }
+
+        .bento-box {
+            background-color: #111111; /* Slightly lighter than pure black for contrast */
+            border-radius: 1.5rem; /* 24px */
+            padding: 2rem; /* 32px */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #222;
+        }
+
+        .chinese-title {
+            font-weight: bold;
+            font-size: 1.875rem; /* text-3xl */
+            line-height: 2.25rem; /* leading-9 */
+        }
+        @media (min-width: 768px) {
+            .chinese-title {
+                font-size: 2.25rem; /* text-4xl */
+                line-height: 2.5rem; /* leading-10 */
+            }
+        }
+
+        .english-subtitle {
+            font-size: 0.875rem; /* text-sm */
+            color: #a0a0a0; /* Lighter gray for subtitles */
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .super-metric {
+            font-weight: 800; /* bolder */
+            line-height: 1;
+            font-size: 6rem; /* text-8xl or 9xl */
+        }
+        @media (min-width: 768px) {
+            .super-metric {
+                font-size: 8rem; /* text-9xl or larger */
+            }
+        }
+        @media (min-width: 1024px) {
+            .super-metric {
+                font-size: 10rem; /* Even larger on desktops */
+            }
+        }
+
+
+        .metric-value {
+            font-weight: bold;
+            font-size: 3rem; /* text-5xl */
+        }
+         @media (min-width: 768px) {
+            .metric-value {
+                font-size: 3.75rem; /* text-6xl */
+            }
+        }
+
+
+        .highlight-gradient-text {
+            background: linear-gradient(90deg, #E31937 0%, rgba(227,25,55,0.85) 50%, rgba(227,25,55,0.6) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            display: inline-block; /* Important for gradient to apply correctly */
+        }
+        
+        .tech-line {
+            height: 2px;
+            background: linear-gradient(90deg, rgba(227,25,55,0) 0%, #E31937 50%, rgba(227,25,55,0) 100%);
+            margin: 1rem 0;
+        }
+
+        .icon-large {
+            font-size: 2.5rem; /* Adjust as needed */
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="page-container">
+
+        <!-- Header Section -->
+        <motion.header
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            class="min-h-screen flex flex-col items-center justify-center text-center p-6 md:p-12 relative"
+        >
+            <div class="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#E31937]/30 via-[#E31937]/10 to-transparent z-0 opacity-50"></div>
+            
+            <h1 class="font-extrabold text-5xl md:text-7xl lg:text-8xl mb-4">
+                金蝶云·苍穹开发者社区
+            </h1>
+            <h2 class="font-semibold text-3xl md:text-5xl highlight-red mb-8">
+                运营月报
+                <span class="block text-2xl md:text-4xl text-gray-300 mt-2">OPERATIONS MONTHLY REPORT</span>
+            </h2>
+            <p class="text-4xl md:text-6xl font-bold text-gray-200">
+                2025<span class="highlight-red">年</span>4<span class="highlight-red">月</span>
+                <span class="block text-xl md:text-2xl text-gray-400 mt-1">APRIL 2025</span>
+            </p>
+            <div class="absolute bottom-10 animate-bounce">
+                <i class="fas fa-chevron-down text-2xl text-gray-500"></i>
+            </div>
+        </motion.header>
+
+        <!-- Main Content - Bento Grid -->
+        <main class="p-4 md:p-8 lg:p-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+
+                <!-- Visits -->
+                <motion.div
+                    initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.7, ease: "easeOut" }}
+                    class="bento-box md:col-span-2 lg:col-span-2 relative overflow-hidden min-h-[350px] md:min-h-[450px]"
+                >
+                    <div class="absolute -right-1/4 -top-1/4 text-[20rem] md:text-[28rem] lg:text-[32rem] font-extrabold highlight-gradient-text opacity-10 z-0">W</div>
+                    <div>
+                        <h3 class="chinese-title">社区总览 <span class="english-subtitle ml-2">COMMUNITY OVERVIEW</span></h3>
+                        <p class="english-subtitle mt-1">MONTHLY PERFORMANCE HIGHLIGHT</p>
+                    </div>
+                    <div class="text-center my-auto py-8">
+                        <div class="super-metric highlight-gradient-text">148.5W</div>
+                        <p class="text-2xl md:text-3xl font-semibold mt-2">总访问量</p>
+                        <p class="english-subtitle">TOTAL PLATFORM VISITS</p>
+                    </div>
+                    <div class="tech-line self-center w-1/2"></div>
+                </motion.div>
+
+                <!-- DAU -->
+                <motion.div
+                    initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
+                    class="bento-box min-h-[350px] md:min-h-[450px]"
+                >
+                    <div>
+                        <h3 class="chinese-title">用户粘性 <span class="english-subtitle ml-2">USER ENGAGEMENT</span></h3>
+                        <i class="fas fa-users icon-large highlight-red mt-4"></i>
+                    </div>
+                    <div class="text-center my-auto py-8">
+                        <div class="metric-value">8600<span class="highlight-red text-4xl">+</span></div>
+                        <p class="text-xl md:text-2xl font-semibold mt-2">日活跃用户</p>
+                        <p class="english-subtitle">DAILY ACTIVE USERS</p>
+                    </div>
+                    <div class="self-end">
+                        <p class="english-subtitle text-xs">CONSISTENT ACTIVITY</p>
+                    </div>
+                </motion.div>
+
+                <!-- New Knowledge -->
+                <motion.div
+                    initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+                    class="bento-box relative overflow-hidden min-h-[300px]"
+                >
+                    <div class="absolute -left-10 -bottom-10 text-[10rem] font-extrabold highlight-gradient-text opacity-15 z-0">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div>
+                        <h3 class="chinese-title">知识沉淀 <span class="english-subtitle ml-2">KNOWLEDGE GROWTH</span></h3>
+                        <p class="english-subtitle mt-1">NEW CONTENT ADDED</p>
+                    </div>
+                    <div class="text-center my-auto py-6">
+                        <div class="metric-value highlight-gradient-text">74</div>
+                        <p class="text-xl md:text-2xl font-semibold mt-2">新增知识篇章</p>
+                        <p class="english-subtitle">NEW KNOWLEDGE ARTICLES</p>
+                    </div>
+                    <div class="w-full h-1 highlight-bg-red opacity-50 rounded-full mt-2"></div>
+                </motion.div>
+
+                <!-- Community Contributions -->
+                <motion.div
+                    initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
+                    class="bento-box md:col-span-2 lg:col-span-1 min-h-[300px]"
+                >
+                    <div>
+                        <h3 class="chinese-title">社区互动 <span class="english-subtitle ml-2">COMMUNITY INTERACTIONS</span></h3>
+                         <i class="fas fa-comments icon-large highlight-red mt-4"></i>
+                    </div>
+                    <div class="space-y-4 my-auto py-4">
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-lg md:text-xl font-medium">问题提出 <span class="english-subtitle text-xs">QUESTIONS</span></span>
+                            <span class="metric-value text-4xl">601</span>
+                        </div>
+                         <hr class="border-gray-700"/>
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-lg md:text-xl font-medium">回答贡献 <span class="english-subtitle text-xs">ANSWERS</span></span>
+                            <span class="metric-value text-4xl">884</span>
+                        </div>
+                         <hr class="border-gray-700"/>
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-lg md:text-xl font-medium">文章贡献 <span class="english-subtitle text-xs">ARTICLES</span></span>
+                            <span class="metric-value text-4xl">104</span>
+                        </div>
+                    </div>
+                    <p class="english-subtitle text-xs text-right">MEMBER CONTRIBUTIONS</p>
+                </motion.div>
+
+                <!-- Evangelist Contribution Rate -->
+                 <motion.div
+                    initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
+                    class="bento-box lg:col-span-1 relative overflow-hidden min-h-[300px] md:min-h-[450px]"
+                >
+                    <div class="absolute -right-10 -bottom-12 text-[12rem] font-extrabold highlight-gradient-text opacity-10 z-0">%</div>
+                    <div>
+                        <h3 class="chinese-title">布道师核心指标 <span class="english-subtitle ml-2">EVANGELIST IMPACT</span></h3>
+                        <p class="english-subtitle mt-1">Q&A CONTRIBUTION RATE</p>
+                    </div>
+                    <div class="text-center my-auto py-8">
+                        <div class="super-metric text-8xl md:text-9xl highlight-gradient-text">82<span class="text-5xl md:text-6xl align-super">%</span></div>
+                        <p class="text-xl md:text-2xl font-semibold mt-2">布道师问答贡献率</p>
+                        <p class="english-subtitle">EVANGELIST Q&A CONTRIBUTION</p>
+                    </div>
+                    <div class="w-3/4 h-1.5 self-center rounded-full overflow-hidden bg-gray-700 my-2">
+                        <div class="h-full highlight-bg-red" style="width: 82%;"></div>
+                    </div>
+                </motion.div>
+
+                <!-- Evangelist Details -->
+                <motion.div
+                    initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.7, delay: 0.5, ease: "easeOut" }}
+                    class="bento-box md:col-span-2 lg:col-span-2 min-h-[300px] md:min-h-[450px]"
+                >
+                    <div>
+                        <h3 class="chinese-title">布道师贡献详情 <span class="english-subtitle ml-2">EVANGELIST DETAILS</span></h3>
+                        <i class="fas fa-hands-helping icon-large highlight-red mt-4"></i>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 my-auto py-6 text-center">
+                        <div>
+                            <p class="metric-value text-5xl">630</p>
+                            <p class="text-lg font-medium mt-1">贡献回答</p>
+                            <p class="english-subtitle text-xs">ANSWERS PROVIDED</p>
+                        </div>
+                        <div class="hidden sm:block border-l border-r border-gray-700 px-2">
+                            <p class="metric-value text-5xl">493</p>
+                            <p class="text-lg font-medium mt-1">回答问题数</p>
+                            <p class="english-subtitle text-xs">QUESTIONS ADDRESSED</p>
+                        </div>
+                         <div class="block sm:hidden"> <!-- Mobile view for the middle element -->
+                            <hr class="border-gray-700 my-3"/>
+                            <p class="metric-value text-5xl">493</p>
+                            <p class="text-lg font-medium mt-1">回答问题数</p>
+                            <p class="english-subtitle text-xs">QUESTIONS ADDRESSED</p>
+                            <hr class="border-gray-700 my-3"/>
+                        </div>
+                        <div>
+                            <p class="metric-value text-5xl">206</p>
+                            <p class="text-lg font-medium mt-1">收获采纳</p>
+                            <p class="english-subtitle text-xs">ANSWERS ACCEPTED</p>
+                        </div>
+                    </div>
+                    <p class="english-subtitle text-xs text-right">VALUABLE EXPERTISE</p>
+                </motion.div>
+            </div>
+        </main>
+
+        <motion.footer
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            class="text-center p-10 mt-10 text-gray-500"
+        >
+            <p>© 2025 金蝶云·苍穹开发者社区. ALL RIGHTS RESERVED.</p>
+            <p class="text-xs mt-1">KINGDEE CLOUD CANGQIONG DEVELOPER COMMUNITY</p>
+        </motion.footer>
+
+    </div>
+
+    <script>
+        // Framer Motion is used via attributes, no specific JS needed for these animations.
+        // For more complex interactions, you'd initialize and use Motion here.
+        // e.g. const { motion, useScroll, useTransform } = Motion;
+        // This setup relies on Tailwind for responsive breakpoints in CSS.
+    </script>
+</body>
+</html>
